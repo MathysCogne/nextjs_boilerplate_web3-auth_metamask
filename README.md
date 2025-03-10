@@ -6,7 +6,10 @@
 
 <br/>
 
-### A modern boilerplate for building Web3 applications with Next.js 15, Wagmi v3, RainbowKit, and Viem.
+### A modern boilerplate for building Web3 applications with Next.js 15, Wagmi v3, RainbowKit and Viem. 🚀 
+### Multi-wallet support 
+### EVM chains support
+
 
 <br/>
 

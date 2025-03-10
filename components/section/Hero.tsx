@@ -1,9 +1,10 @@
 'use client';
 
 import React from "react";
-import { ConnectButton } from "../";
+import { Button } from "@/components";
 import { StarryBackground } from "../";
 import { TEXT } from "@/constants/text";
+import Link from "next/link";
 
 export const Hero = () => {
   return (
@@ -17,7 +18,11 @@ export const Hero = () => {
         <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto">
           {TEXT.hero.subtitle}
         </p>
-        <ConnectButton />
+        <Link href="https://github.com/MathysCogne/nextjs_boilerplate_web3-auth_metamask" target="_blank">
+          <Button variant="secondary" size="md">
+            Repo GitHub
+          </Button>
+        </Link>
       </div>
     </section>
   );

@@ -8,7 +8,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full py-6 px-4 bg-gradient-to-b from-transparent to-gray-900/50 backdrop-blur-sm">
+    <footer className="w-full py-6 px-4 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
         <Link 
           href={PERSONAL_WEBSITE}

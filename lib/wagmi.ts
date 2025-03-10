@@ -1,18 +1,14 @@
-import { createConfig } from 'wagmi';
-import { mainnet, arbitrum, optimism, polygon, lineaSepolia } from 'wagmi/chains';
-import { metaMask } from 'wagmi/connectors';
-import { http } from 'viem';
-import { INFURA_ENDPOINTS } from './constants';
+import { ALL_CHAINS, CHAIN_TRANSPORTS } from './constants';
+import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 
-// Crée un client Wagmi avec configuration
-export const config = createConfig({
-  chains: [mainnet, arbitrum, optimism, polygon, lineaSepolia],
-  connectors: [metaMask()],
-  transports: {
-    [mainnet.id]: http(INFURA_ENDPOINTS.MAINNET),
-    [arbitrum.id]: http(INFURA_ENDPOINTS.ARBITRUM),
-    [optimism.id]: http(INFURA_ENDPOINTS.OPTIMISM),
-    [polygon.id]: http(INFURA_ENDPOINTS.POLYGON),
-    [lineaSepolia.id]: http(INFURA_ENDPOINTS.LINEA_SEPOLIA),
-  },
+if (!process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID) {
+  throw new Error('NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID is not defined');
+}
+
+export const config = getDefaultConfig({
+  appName: 'Next.js Web3 Boilerplate',
+  projectId: process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID,
+  chains: ALL_CHAINS,
+  ssr: true,
+  transports: CHAIN_TRANSPORTS,
 });

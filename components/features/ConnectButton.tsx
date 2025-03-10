@@ -133,7 +133,7 @@ export const ConnectButton = () => {
         {TEXT.connect.connect}
       </Button>
 
-      {showDropdown && connectors.length > 1 && (
+      {showDropdown && connectors.length >= 1 && (
         <div className="absolute right-0 mt-2 w-56 rounded-xl backdrop-blur-md bg-gray-800/95 
                      shadow-xl border border-gray-700/50 overflow-hidden transform origin-top-right 
                      transition-all duration-200 ease-out divide-y divide-gray-700/50">

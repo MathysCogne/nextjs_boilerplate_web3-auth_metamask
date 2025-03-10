@@ -1,8 +1,14 @@
 # Next.js Web3 Boilerplate 🚀
 
-A modern boilerplate for building Web3 applications with Next.js 15, Wagmi v3, and Viem.
+<br/>
 
 ![Project Preview](public/preview.png)
+
+<br/>
+
+### A modern boilerplate for building Web3 applications with Next.js 15, Wagmi v3, and Viem.
+
+<br/>
 
 ## 🌟 Features
 
@@ -20,6 +26,8 @@ A modern boilerplate for building Web3 applications with Next.js 15, Wagmi v3, a
 - [TailwindCSS](https://tailwindcss.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 
+<br/>
+
 ## 🚀 Quick Start
 
 ```bash
@@ -33,6 +41,8 @@ pnpm install
 pnpm dev
 ```
 
+<br/>
+
 ## 🔧 Configuration
 
 ### Environment Variables
@@ -43,6 +53,8 @@ Create a `.env` file at the root of your project:
 # App
 NEXT_PUBLIC_INFURA_API_KEY = your_api_key_infura
 ```
+
+<br/>
 
 ### Network Configuration
 
@@ -69,6 +81,8 @@ export const NETWORKS = {
 } as const;
 ```
 
+<br/>
+
 #### 2. `lib/constants.ts`
 This file configures the RPC endpoints for each network. We use Infura by default:
 
@@ -83,6 +97,8 @@ export const INFURA_ENDPOINTS = {
 } as const;
 ```
 
+<br/>
+
 #### 3. `lib/wagmi.ts`
 This file configures the Wagmi client with the supported networks:
 
@@ -94,6 +110,8 @@ export const config = createConfig({
   // ... other config
 });
 ```
+
+<br/>
 
 ### Adding a New Network
 
@@ -148,18 +166,4 @@ To add support for a new network, follow these steps:
    - Check explorer links
    - Verify network information display in the UI
 
-### Supported Networks
-
-The boilerplate currently supports:
-- Ethereum Mainnet
-- Arbitrum One
-- Optimism
-- Polygon
-- Linea Sepolia
-
-Each network is preconfigured with:
-- Chain configuration
-- RPC endpoints (via Infura)
-- Block explorers
-- Network metadata
-
+<br/>

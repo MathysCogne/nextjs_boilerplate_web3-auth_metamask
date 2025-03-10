@@ -10,7 +10,6 @@
 ### Multi-wallet support 
 ### EVM chains support
 
-
 <br/>
 
 ## 📑 Table of Contents
@@ -65,6 +64,9 @@ pnpm install
 # Start development server
 pnpm dev
 ```
+
+### Enjoying my boilerplate ? Show your love with a star ! 🌟🌟🌟
+
 
 <br/>
 

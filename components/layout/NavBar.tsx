@@ -1,6 +1,6 @@
 'use client';
 
-import { ConnectButton } from "../";
+import { ConnectButton } from "@/components";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { TEXT } from "@/constants/text";

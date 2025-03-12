@@ -2,7 +2,8 @@
 
 <br/>
 
-![Project Preview](public/preview.png)
+<img src="public/preview1.png" alt="preview" width="600" />
+<img src="public/preview2.png" alt="preview" width="600" />
 
 <br/>
 
@@ -23,6 +24,7 @@
   - [Supported Networks](#supported-networks)
   - [Supported Wallets](#supported-wallets)
   - [Adding a New Network](#adding-a-new-network)
+- [Hook for Wallet Info and Transaction Management](#core-hooks)
 - [Beginner's Guide](#-beginners-guide)
   - [Understanding Ethereum Networks](#understanding-ethereum-networks)
   - [Setting up Infura](#setting-up-infura)
@@ -40,6 +42,7 @@
 - 🌈 **Multiple Wallet Support**
 - 🎯 **Type-Safe** with TypeScript
 - 🔌 **Easy Network Configuration**
+- 📊 **Wallet Information and Transaction Management**
 
 ## 🛠 Technologies
 
@@ -195,6 +198,47 @@ The configuration will automatically handle:
 - Network Information Display
 
 <br/>
+
+## Core Hooks
+
+### useTransaction Hook
+
+The `useTransaction` hook provides a comprehensive solution for handling cryptocurrency transactions:
+
+```typescript
+const {
+  input,              // Transaction input state
+  setInput,           // Input state setter
+  networkConfig,      // Current network configuration
+  validation,         // Input validation state
+  isPending,          // Transaction pending state
+  isConfirming,       // Transaction confirming state
+  isConfirmed,        // Transaction confirmed state
+  handleSend,         // Transaction sender function
+  hash,              // Transaction hash
+  sendError,         // Send error state
+  confirmError,       // Confirmation error state
+  walletInfo         // Wallet information
+} = useTransaction();
+```
+
+### useWalletInfo Hook
+
+The `useWalletInfo` hook provides centralized access to wallet information:
+
+```typescript
+const {
+  status,            // Wallet connection status
+  address,           // Wallet address
+  chain,             // Current chain information
+  balance            // Wallet balance
+} = useWalletInfo();
+```
+
+These hooks are designed to work together to provide a seamless Web3 experience.
+
+<br/>
+
 
 ## 📚 Beginner's Guide
 
@@ -368,5 +412,7 @@ There are several reliable sources to find network information:
    Sepolia:   { chainId: 11155111, symbol: 'ETH'   }
    Mumbai:    { chainId: 80001,    symbol: 'MATIC' }
    ```
+
+<br/>
 
 <br/>

@@ -27,6 +27,23 @@ interface TextContent {
     description: string;
     backHome: string;
   };
+  transaction: {
+    recipient: string;
+    amount: string;
+    max: string;
+    send: string;
+    confirming_wallet: string;
+    confirming_transaction: string;
+    confirmed: string;
+    view_etherscan: string;
+    error: string;
+    error_confirming: string;
+    testnet_warning: string;
+    native_token: string;
+    balance: string;
+    address: string;
+    status: string;
+  };
 }
 
 export const TEXT: TextContent = {
@@ -57,5 +74,22 @@ export const TEXT: TextContent = {
     subtitle: "Error: Not Found",
     description: "Oops ! This page doesn't exist.",
     backHome: "Back to Home"
+  },
+  transaction: {
+    recipient: "Recipient Address",
+    amount: "Amount",
+    max: "Max",
+    send: "Send",
+    confirming_wallet: "Confirming in wallet...",
+    confirming_transaction: "Confirming transaction...",
+    confirmed: "Transaction confirmed!",
+    view_etherscan: "View on Etherscan",
+    error: "Error",
+    error_confirming: "Error confirming",
+    testnet_warning: "Transactions on {network} use test {symbol}.",
+    native_token: "Native Token",
+    balance: "Balance",
+    address: "Address",
+    status: "Status"
   }
 }; 

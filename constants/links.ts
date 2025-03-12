@@ -1,5 +1,5 @@
 export const PERSONAL_WEBSITE = "https://www.mathys-cognefoucault.fr/";
-export const GITHUB_PROFILE = "https://github.com/mathyscogne";
+export const GITHUB_PROFILE = "https://github.com/MathysCogne/nextjs_boilerplate_web3-auth_metamask";
 export const LINKEDIN_PROFILE = "https://www.linkedin.com/in/mathys-cogne-foucault/";
 
 export const AUTHOR_NAME = "Mathys Cogne-Foucault";

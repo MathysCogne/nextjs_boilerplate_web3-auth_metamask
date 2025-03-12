@@ -2,22 +2,19 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { SOCIAL_LINKS, PERSONAL_WEBSITE, AUTHOR_NAME } from "@/constants/links";
+import { SOCIAL_LINKS, GITHUB_PROFILE } from "@/constants/links";
 
 export const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="w-full py-6 px-4 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
         <Link 
-          href={PERSONAL_WEBSITE}
+          href={GITHUB_PROFILE}
           className="text-gray-300 hover:text-blue-400 transition-colors duration-300 font-medium flex items-center space-x-2"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className="text-gray-400">© {currentYear}</span>
-          <span>{AUTHOR_NAME}</span>
+          <span>Enjoying my boilerplate ? Show your love with a star in my GitHub repo ! 🌟</span>
         </Link>
 
         <div className="flex items-center space-x-6">
